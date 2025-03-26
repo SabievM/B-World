@@ -1,0 +1,13 @@
+.genres{
+    margin: 40px auto;
+    width: 1192px;
+    min-height: calc(100vh - 44rem);
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 31px;
+        flex-wrap: wrap;
+        width: 1192px;
+    }
+}

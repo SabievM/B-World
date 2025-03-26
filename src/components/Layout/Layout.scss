@@ -1,0 +1,29 @@
+.layout{
+    .btn-top{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        position: fixed;
+        top: 85vh;
+        left: 85vw;
+        background-color: #bbaadf;
+        color: #fff;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover{
+            transform: scale(1.1);
+            color: #937DC2;
+            background-color: #fff;
+            border: 1px solid #937DC2;
+        }
+    }
+    .btn-top-hidden{
+        display: none;
+    }
+    .btn-top-visible{
+        display: flex;
+    }
+}

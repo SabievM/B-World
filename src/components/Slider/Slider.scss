@@ -1,0 +1,50 @@
+.slides{
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    width: 1192px;
+    height: 533px;
+    overflow: hidden;
+    .wrapper-slides{
+        position: absolute;
+        display: flex;
+        left: 0;
+        height: 100%;
+        transition: 1s;
+    }
+    .rows {
+        position: absolute;
+        bottom: 10px;
+        left: 45%;
+        display: flex;
+        gap: 24px;
+        .row-left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border: 1px solid #937dc2;
+            border-radius: 50%;
+            transition: 0.3s;
+            &:hover {
+                transform: scale(1.3);
+            }
+        }
+        .row-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 32px;
+            border: 1px solid #937dc2;
+            border-radius: 50%;
+            transition: 0.3s;
+            &:hover {
+                transform: scale(1.3);
+            }
+        }
+    }
+}

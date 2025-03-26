@@ -1,0 +1,52 @@
+.bestsellers{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto;
+    width: 1192px;
+    .container{
+        overflow: hidden;
+        width: 1192px;
+        display: flex;
+        flex-direction: column;
+        gap: 46px;
+        .title{
+            font-size: 1.375rem;
+            font-weight: bold;
+            color: #313131;
+        }
+        .cards{
+            padding-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 3px;
+            gap: 31px;
+            transition: 0.3s;
+        }
+    }
+    .row{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border: 1px solid #937DC2;
+        border-radius: 50%;
+        transition: 0.3s;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    .left{
+        
+        top: 40%;
+        left: -50px;
+    }
+    .right{
+        
+        top: 40%;
+        right: -50px;
+    }
+}

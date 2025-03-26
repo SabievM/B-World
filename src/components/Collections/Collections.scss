@@ -1,0 +1,56 @@
+.collections{
+    position: relative;
+    width: 1192px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    .container{
+        overflow: hidden;
+        width: 1192px;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 46px;
+        .title{
+            font-size: 2.375rem;
+            font-weight: bold;
+            color: #313131;
+        }
+        .cards{
+            padding-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 3px;
+            gap: 31px;
+            transition: 0.3s;
+            .title{
+                font-size: 1.375rem;
+            }
+        }
+    }
+    .row{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border: 1px solid #937DC2;
+        border-radius: 50%;
+        transition: 0.3s;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    .left{
+        
+        top: 40%;
+        left: -70px;
+    }
+    .right{
+        
+        top: 40%;
+        right: -70px;
+    }
+}

@@ -1,0 +1,101 @@
+.terms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 103px;
+    margin-bottom: 60px;
+    overflow: hidden;
+    .container {
+        width: 1191px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        overflow: hidden;
+        .left {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            img{
+                transition: 0.3s;
+            }
+            &::after {
+                content: "";
+                width: 2px;
+                height: 80px;
+                background-color: #937dc2;
+                position: absolute;
+                right: -108px;
+                transition: 0.3s;
+            }
+            &:hover{
+                img{
+                    transform: rotateZ(-40deg);
+                }
+                &::after{
+                    transform: scaleY(1.5);
+                }
+            }
+        }
+        .middle {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            img{
+                transition: 0.5s;
+            }
+            &::after {
+                content: "";
+                width: 2px;
+                height: 80px;
+                background-color: #937dc2;
+                position: absolute;
+                right: -100px;
+                transition: 0.5s;
+            }
+            &:hover{
+                img{
+                    transform: rotateZ(360deg);
+                }
+                &::after{
+                    transform: scaleY(1.5);
+                }
+            }
+        }
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            img{
+                transition: 0.5s;
+            }
+            &:hover{
+                img{
+                    transform: rotateZ(-360deg);
+                }
+            }
+        }
+    }
+}
+// @keyframes goCar {
+//     16.6% {
+//         transform: translate(0, 0);
+//     }
+//     32.2% {
+//         transform: translate(0, -30px); /* Поднимаем на 10 пикселей вверх */
+//     }
+//     49.8% {
+//         transform: translate(250px, -30px);
+//     }
+//     66.4%{
+//         transform: translate(250px, 30px);
+//     }
+//     83%{
+//         transform: translate(0, 30px);
+//     }
+//     100%{
+//         transform: translate(0, 0);
+//     }
+// }

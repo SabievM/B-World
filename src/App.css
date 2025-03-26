@@ -1,0 +1,32 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  font-weight: 400;
+  color: #7B7881;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #937DC2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #4D4C4C;
+  font-family: Inter;
+  font-weight: 400;
+
+}
+li{
+  text-decoration: none;
+  list-style-type: none;
+}
+img{
+  padding: 0;
+  margin: 0;
+}

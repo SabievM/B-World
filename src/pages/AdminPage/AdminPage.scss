@@ -1,0 +1,107 @@
+.adminpage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    .container{
+        width: 1192px;
+        min-height: calc(100vh - 10.5rem - 26rem);
+        .slider-section{
+            width: 100%;
+            height: 386px;
+            display: flex;
+            gap: 30px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            .add-slide{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                h2{
+                    margin-bottom: 30px;
+                }
+                .form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    label{
+                        display: flex;
+                        flex-direction: column;
+                        input{
+                            border: none;
+                            border-bottom: 1px solid #937DC2;
+                            padding-bottom: 4px;
+                            font-size: 1rem;
+                            color: #937DC2;
+                            height: 40px;
+                            transition: 0.3s;
+                            &::placeholder{
+                                color: #937DC2;
+                            }
+                            &:focus{
+                                outline: none;
+                            }
+                            &:hover{
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                    .btn{
+                        margin-top: 48px;
+                        padding: 12px 0;
+                        background-color: #937DC2;
+                        font-size: 1rem;
+                        font-weight: 400;
+                        border-radius: 2px;
+                        border: none;
+                        color: #fff;
+                        transition: 0.2s;
+                        &:hover{
+                            transform: scale(1.03);
+                        }
+                    } 
+                }
+            }
+            .delete-slide{
+                width: 50%;
+                max-height: 100%;
+                .slide{
+                    width: 100%;
+                    height: 357px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    
+                    .slide-authors{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        h2{
+                            cursor: pointer;
+                            color: #937DC2;
+                            transition: 0.3s;
+                            &:hover{
+                                color: red;
+                            }
+                        }
+                    }
+                    .btn{
+                        margin-top: 48px;
+                        padding: 12px 0;
+                        background-color: #937DC2;
+                        font-size: 1rem;
+                        font-weight: 400;
+                        border-radius: 2px;
+                        border: none;
+                        color: #fff;
+                        transition: 0.2s;
+                        &:hover{
+                            transform: scale(1.03);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
