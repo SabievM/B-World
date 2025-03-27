@@ -2,10 +2,15 @@ import axios from "axios";
 
 const BASE_URL = 'http://localhost:3000/slides/';
 
-export type SlidesResponseType = {
+type params = {
     author: string,
     description: string,
     image: string
+}
+
+export type SlidesResponseType = {
+    id: number,
+    params: params
 }
 
 export const getSlides = async () => {

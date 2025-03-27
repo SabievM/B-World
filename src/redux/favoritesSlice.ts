@@ -1,6 +1,11 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 import { BookResponseType } from "../requests/getBooks";
+import { GoogleBookApiResponceType } from "../requests/getBookGoogleBookApi";
+
+type FavoritesState = {
+    favorites: Array<BookResponseType | GoogleBookApiResponceType>
+}
 
 const loadFavorites = (): BookResponseType[] => {
     const stored = localStorage.getItem("favorites")
@@ -27,12 +32,12 @@ const favoritesSlice = createSlice({
 
             localStorage.setItem("favorites", JSON.stringify(state.favorites))
         },
-        toggleFavoriteGoogleBooks: (state, action: PayloadAction<BookResponseType>) => {
+        toggleFavoriteGoogleBooks: (state, action: PayloadAction<GoogleBookApiResponceType>) => {
             const book = action.payload
-            const isFavorite = state.favorites.some((fav) => fav.title === book.title)
+            const isFavorite = state.favorites.some((fav) => fav.id === book.id)
 
             if (isFavorite) {
-                state.favorites = state.favorites.filter((fav) => fav.title !== book.title)
+                state.favorites = state.favorites.filter((fav) => fav.id !== book.id)
             } else {
                 state.favorites.push(book)
             }

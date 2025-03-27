@@ -1,6 +1,5 @@
 import "./Card.scss";
 import IconCardFavorite from "../../assets/icons/icon-card-favorite.svg";
-import IconCartBascet from "../../assets/icons/icon-add-cart-basket.svg";
 import DeleteIcon from "../../assets/icons/icons-delete.svg";
 import { Link } from "react-router-dom";
 import { BookResponseType } from "../../requests/getBooks";

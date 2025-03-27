@@ -16,7 +16,7 @@ const Favorites = () => {
                     <h2>Пока нет избранных! Добавьте сюда свою книгу, чтобы не потреть</h2>
                 ) : (
                     favorites?.map((item) => 
-                        <div style={{display:"flex", flexDirection:"column", gap: "20px"}}>
+                        <div key={item.id} style={{display:"flex", flexDirection:"column", gap: "20px"}}>
                             <Card book={item}/>
                         </div>
                     )

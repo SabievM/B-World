@@ -1,9 +1,14 @@
 import './SliderContainer.scss'
 import Slide from '../../assets/images/image-slider1.png'
-type PropsSlide = {
+
+type Params = {
     author: string,
     description: string,
     image: string
+}
+
+type PropsSlide = {
+    slide: Params
 }
 
 const SliderContainer = ({slide}: PropsSlide) => {
