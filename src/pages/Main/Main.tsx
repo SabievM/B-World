@@ -11,9 +11,9 @@ import Collections from '../../components/Collections/Collections'
 
 const Main = () => {
   
-  const bestsellersRef = useRef(null)
-  const newArrivalsRef = useRef(null)
-  const collectionsRef = useRef(null)
+  const bestsellersRef = useRef<HTMLDivElement>(null!)
+  const newArrivalsRef = useRef<HTMLDivElement>(null!)
+  const collectionsRef = useRef<HTMLDivElement>(null!)
   const location = useLocation()
 
   

@@ -1,12 +1,11 @@
 import './Favorites.scss'
-import { RootState } from "@reduxjs/toolkit/query"
-import { useSelector } from "react-redux"
 import Card from '../../components/Card/Card'
+import { useAppSelector } from '../../redux/hooks'
 
 
 const Favorites = () => {
 
-    const favorites = useSelector((state: RootState) => state.favorites.favorites)
+    const favorites = useAppSelector((state) => state.favorites.favorites)
     
 
     return (
