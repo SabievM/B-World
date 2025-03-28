@@ -10,7 +10,5 @@ export type GenreBookResponseType = {
 
 export const getGenres = async (genre: string) => {
     const response = await axios.get<GenreBookResponseType>(`${apiURL}?q=subjects:${genre}&langRestrict=ru&maxResults=10&oprderBy=relevance&key=${apiKey}`)
-    console.log(response.data);
-    
     return response.data
 }

@@ -14,7 +14,6 @@ const SearchPage = () => {
     const [booksList, setBooksList] = useState<GoogleBookApiResponceType[]>([])
     const [isLoading, setIsLoading] = useState(false)
     const search = useAppSelector(state => state.searchReducer.search)
-    console.log("search in SearchPage", search);
     
     useEffect(() => {
         const fetchData = async () => {

@@ -15,7 +15,6 @@ const Genres = () => {
             const fetchData = async () => {
                 setIsLoading(true)
                 const resp = await getGenres(genre)
-                console.log('responce', resp);
                 
                 setBooksGenres(resp)
                 setIsLoading(false)
@@ -27,7 +26,6 @@ const Genres = () => {
         }
         
     }, [genre])
-    console.log(booksGenres);
     
     return (
         <div className='genres'>

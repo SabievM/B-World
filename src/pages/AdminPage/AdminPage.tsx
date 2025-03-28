@@ -11,7 +11,7 @@ const AdminPage = () => {
     const [desc, setDesc] = useState('')
     const [image, setImage] = useState('')
 
-    const [slideToDelete, setSlideToDelete] = useState('')
+    const [slideToDelete, setSlideToDelete] = useState(0)
 
     useEffect(() => {
             try{
@@ -27,12 +27,10 @@ const AdminPage = () => {
 
     const addSlide = async() => {
         await postSlide({author: author, description: desc, image: image})
-        console.log("Успешно добавлено");
-        console.log(author, desc, image);
         alert("Добавлено")   
     }
     const deleteSlider = async() => {
-        await deleteSlide(slideToDelete)
+        await deleteSlide(+slideToDelete)
     }
     
      return (

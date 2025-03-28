@@ -19,7 +19,6 @@ const CardGoogleBooksApi: React.FC<Props> = ({ book, id }: Props) => {
     
     const dispatch = useDispatch()
     const favorites = useAppSelector((state) => state.favorites.favorites)
-    console.log(book);
     
     return (
         

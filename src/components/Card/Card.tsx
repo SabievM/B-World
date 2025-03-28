@@ -3,9 +3,11 @@ import IconCardFavorite from "../../assets/icons/icon-card-favorite.svg";
 import DeleteIcon from "../../assets/icons/icons-delete.svg";
 import { Link } from "react-router-dom";
 import { BookResponseType } from "../../requests/getBooks";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { toggleFavorite } from "../../redux/favoritesSlice";
 import { RootState } from "../../redux/store";
+import { useAppSelector } from "../../redux/hooks";
+
 
 type Props = {
   book: BookResponseType;
@@ -13,7 +15,7 @@ type Props = {
 
 const Card: React.FC<Props> = ({ book }) => {
   const dispatch = useDispatch();
-  const favorites = useSelector((state: RootState) => state.favorites.favorites);
+  const favorites = useAppSelector((state: RootState) => state.favorites.favorites);
 
   const orderViaWhatsApp = () => {
     const message = `Здравствуйте! Я хочу заказать книгу "${book.title}" от автора ${book.author}`;

@@ -6,7 +6,7 @@ import IconStar from '../../assets/icons/icon-star-raiting.svg';
 import './BookDetailGoogleBooksApi.scss';
 
 import { RootState } from '../../redux/store';
-import { toggleFavorite } from '../../redux/favoritesSlice';
+import { toggleFavoriteGoogleBooks } from '../../redux/favoritesSlice';
 import { getBookGoogleBookApi, GoogleBookApiResponceType } from '../../requests/getBookGoogleBookApi';
 
 const BookDetailGoogleBooksApi: React.FC = () => {
@@ -78,7 +78,7 @@ console.log(id);
               Заказать через WhatsApp
             </button>
             <button
-              onClick={() => book && dispatch(toggleFavorite(book))}
+              onClick={() => book && dispatch(toggleFavoriteGoogleBooks(book))}
               className="btn add-favorite"
             >
               {favorites.some((fav) => fav.id === book?.id)

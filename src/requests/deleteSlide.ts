@@ -3,6 +3,6 @@ import axios from "axios";
 
 const BASE_URL = "http://localhost:3000/slides"
 
-export const deleteSlide = async(id: string) => {
+export const deleteSlide = async(id: number) => {
     await axios.delete(`${BASE_URL}/${id}`)
 }

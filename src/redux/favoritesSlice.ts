@@ -3,7 +3,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { BookResponseType } from "../requests/getBooks";
 import { GoogleBookApiResponceType } from "../requests/getBookGoogleBookApi";
 
-type FavoritesState = {
+export type FavoritesState = {
     favorites: Array<BookResponseType | GoogleBookApiResponceType>
 }
 
