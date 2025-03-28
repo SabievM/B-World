@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:3000/slides/"
+const BASE_URL = "https://673e4dda0118dbfe860ae241.mockapi.io/products/"
 
 type Slides = {
     author: string,

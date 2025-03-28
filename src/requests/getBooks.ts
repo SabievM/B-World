@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const  BASE_URL = "http://localhost:3000/books";
+const  BASE_URL = "https://673e4dda0118dbfe860ae241.mockapi.io/phonesheadphones";
 
 type Book = {
     id?: number,
