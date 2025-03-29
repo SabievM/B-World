@@ -1,5 +1,5 @@
 import axios from "axios";
-import { GoogleBookApiResponceType } from "./getBookGoogleBookApi";
+import { GenreBookResponseType } from "./getGenres";
 
 const apiKey = import.meta.env.VITE_API_KEY
 const apiURL = import.meta.env.VITE_API_URL
@@ -25,6 +25,6 @@ const apiURL = import.meta.env.VITE_API_URL
 
 
 export const searchBook = async (search: string) => {
-    const response = await axios.get<GoogleBookApiResponceType[]>(`${apiURL}?q=${search}&key=${apiKey}`)
+    const response = await axios.get<GenreBookResponseType>(`${apiURL}?q=${search}&key=${apiKey}`)
     return response.data
 }

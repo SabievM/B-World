@@ -15,7 +15,6 @@ const Slider = () => {
     const rightSlide = () => {
         setPositionSlide(prev => prev <= -300 ? 0 : prev - 100)
     }
-    console.log(slidesData);
     
     useEffect(() => {
         try{

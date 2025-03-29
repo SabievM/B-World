@@ -5,13 +5,13 @@ import './SearchPage.scss'
 import CardGoogleBooksApi from '../../components/CardGoogleBooksApi/CardGoogleBooksApi'
 import { searchBook } from '../../requests/searchBooks';
 import { useAppSelector } from '../../redux/hooks';
-import { GoogleBookApiResponceType } from '../../requests/getBookGoogleBookApi';
+import { GenreBookResponseType } from '../../requests/getGenres';
     
 
 
 const SearchPage = () => {
     
-    const [booksList, setBooksList] = useState<GoogleBookApiResponceType[]>([])
+    const [booksList, setBooksList] = useState<GenreBookResponseType | null>(null)
     const [isLoading, setIsLoading] = useState(false)
     const search = useAppSelector(state => state.searchReducer.search)
     
@@ -29,7 +29,7 @@ const SearchPage = () => {
             <div className="container">
             <>
                 {!isLoading ? (
-                    booksList?.map((item) => 
+                    booksList?.items.map((item) => 
                         <div key={item.id} style={{display:"flex", flexDirection:"column", gap: "20px"}}>
                             <CardGoogleBooksApi id={item.id} book={item}/>
                         </div>
