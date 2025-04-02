@@ -125,14 +125,6 @@
                 gap: 1rem;
             }
         }
-        .bottom{
-            position: absolute;
-            bottom: 15px;
-            left: 40%;
-            @media screen and (max-width: 1250px) {
-                left: 33%;
-            }
-            .text{}
-        }
+        
     }
 }

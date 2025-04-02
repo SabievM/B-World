@@ -76,9 +76,6 @@ const Footer = () => {
             <img src={VisaImage} alt="VisaImage" />
           </div>
         </div>
-        <div className="bottom">
-          <p className="text">© All copyrights are reserved. B-World 2022. </p>
-        </div>
       </div>
     </div>
   )

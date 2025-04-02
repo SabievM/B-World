@@ -47,7 +47,7 @@ const BookDetail: React.FC = () => {
   }, [id]);
 
   return (
-    <div className="book-detail">
+    <div className="book-detail-json">
       <div className="product-container">
         <div className="left">
           <div className="images">
