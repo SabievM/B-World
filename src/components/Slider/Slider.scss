@@ -5,8 +5,9 @@
     width: 1192px;
     height: 533px;
     overflow: hidden;
-    @media screen and (max-width: 430px) {
-        
+    @media screen and (max-width: 1250px) {
+        height: 67rem;
+        width: 360px;
     }
     .wrapper-slides{
         position: absolute;
@@ -21,6 +22,9 @@
         left: 45%;
         display: flex;
         gap: 24px;
+        @media screen and (max-width: 1250px) {
+            bottom: 170px;
+        }
         .row-left {
             display: flex;
             flex-direction: column;

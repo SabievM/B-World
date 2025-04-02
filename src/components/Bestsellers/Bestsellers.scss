@@ -5,6 +5,9 @@
     align-items: center;
     margin: 80px auto;
     width: 1192px;
+    @media screen and (max-width: 1250px) {
+        width: 340px;
+    }
     .container{
         overflow: hidden;
         width: 1192px;

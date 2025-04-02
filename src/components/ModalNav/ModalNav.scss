@@ -1,0 +1,32 @@
+.modal-nav{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.384);
+    display: flex;
+    justify-content: start;
+    z-index: 9;
+    .navigate {
+        width: 50vw;
+        height: 100vh;
+        background-color: #fff;
+        padding-top: 40px;
+        z-index: 11;
+        .nav-list {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            max-width: 21rem;
+            gap: 1.51rem;
+            .nav-item {
+                transition: 0.3s;
+                white-space: nowrap;
+                &:hover{
+                    transform: scale(1.2)
+                }
+            }
+        }
+    }
+}

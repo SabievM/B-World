@@ -8,7 +8,9 @@
         width: 74.5rem;
         display: flex;
         flex-direction: column;
-    
+        @media screen and (max-width: 1250px) {
+            width: 360px;
+        }
         .top {
             max-width: 100%;
             padding-top: 1.127rem;
@@ -17,13 +19,24 @@
             align-items: center;
             justify-content: space-between;
             gap: 4.381rem;
-            
+            @media screen and (max-width: 1250px) {
+                width: 360px;
+                gap: 1rem;
+            }
             .logo {
                 display: flex;
                 align-items: center;
                 gap: 1rem;
                 max-width: 124px;
                 font-size: 12px;
+                @media screen and (max-width: 1250px) {
+                    gap: 0;
+                }
+                img{
+                    width: 61px;
+                    height: 35px;
+                    object-fit: cover;
+                }
                 .logo-text {
                     position: relative;
                     font-size: 12px;
@@ -38,6 +51,20 @@
                         height: 30px;
                         position: absolute;
                         left: -8px;
+                    }
+                    @media screen and (max-width: 1250px) {
+                        display: none;
+                    }
+                }
+                .burger-menu-close{
+                    display: none;
+                    width: 100%;
+                    .burger-icon{
+                        width: 20px;
+                        height: 20px;
+                    }
+                    @media screen and (max-width: 1250px) {
+                        display: block;
                     }
                 }
             }
@@ -64,6 +91,9 @@
                         outline: none;
                         color: #000;
                     }
+                    @media screen and (max-width: 1250px) {
+                        width: 10rem;
+                    }
                 }
                 .image {
                     top: 8.5px;
@@ -84,6 +114,9 @@
                         &:hover{
                             transform: scale(1.2)
                         }
+                    }
+                    @media screen and (max-width: 1250px) {
+                        display: none;
                     }
                 }
             }
@@ -159,17 +192,26 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            
+            @media screen and (max-width: 1250px) {
+                width: 100%;
+                padding-left: 25px;
+            }
             .left {
                 display: flex;
                 align-items: center;
                 gap: 1.5rem;
-                
+                @media screen and (max-width: 1250px) {
+                    display: none;
+                }
             }
             .right {
                 display: flex;
                 align-items: center;
                 gap: 2.188rem;
+                @media screen and (max-width: 1250px) {
+                    width: 100%;
+                    justify-content: space-between;
+                }
                 .phone {
                     display: flex;
                     align-items: center;
@@ -200,6 +242,10 @@
                         background-color: #C689C6;
                         color: #fff;
                     }
+                    @media screen and (max-width: 1250px) {
+                        width: 132px;
+                        height: 49px;
+                    }
                 }
             }
         }
@@ -214,3 +260,4 @@
         }
     }
 }
+

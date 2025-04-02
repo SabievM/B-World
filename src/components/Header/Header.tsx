@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import Logo from "../../assets/icons/LogoBWorld.svg";
+import Logo from "../../assets/images/logo_JB.jpg";
 import SearchIcon from "../../assets/icons/icon-search.svg";
+import BurgerIcon from "../../assets/icons/icon-burger_menu.svg";
 import FavoriteIcon from "../../assets/icons/icon-favorite.svg";
 import ProfileIcon from "../../assets/icons/icon-profile.svg";
 import PhoneIcon from "../../assets/icons/icon-phone.svg";
@@ -10,6 +11,7 @@ import { RootState } from "../../redux/store";
 import { useState } from "react";
 import ModalCatalog from "../ModalCatalog/ModalCatalog";
 import { changeSearch } from "../../redux/searchSlice";
+import ModalNav from "../ModalNav/ModalNav";
 
 const Header: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -21,6 +23,11 @@ const Header: React.FC = () => {
   const openModalCatalog = () => {
     setOpen(!open);
   };
+  
+  const [openModalNav, setOpenModalNav] = useState(false);
+  const handleModalNav = () => {
+      setOpenModalNav(!openModalNav);
+    };
 
   return (
     <div className="header">
@@ -31,12 +38,15 @@ const Header: React.FC = () => {
               <img src={Logo} alt="logo" />
             </Link>
             <span className="logo-text">We love books</span>
+            <div onClick={handleModalNav} className="burger-menu burger-menu-close">
+              <img className="burger-icon" src={BurgerIcon} alt="" />
+            </div>
           </div>
           <div className="search">
             <input
               onChange={(event) => setSearchText(event.target.value)}
               type="text"
-              placeholder="Type any book here"
+              placeholder="Поиск"
             />
             <Link to={`/search/${searchText}`}>
               <img onClick={() => dispatch(changeSearch(searchText))} className="image" src={SearchIcon} alt="search" />
@@ -91,6 +101,7 @@ const Header: React.FC = () => {
         </div>
       </div>
       {open && <ModalCatalog open={open} setOpen={setOpen} />}
+      {openModalNav && <ModalNav open={open} setOpen={setOpen} openNav={openModalNav} setOpenNav={setOpenModalNav} />}
     </div>
   );
 };

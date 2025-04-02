@@ -6,6 +6,9 @@
     margin-top: 110px;
     margin: 0 auto;
     width: 1192px;
+    @media screen and (max-width: 1250px) {
+        width: 340px;
+    }
     .container{
         overflow: hidden;
         width: 1192px;

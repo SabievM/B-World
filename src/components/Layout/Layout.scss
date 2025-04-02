@@ -19,6 +19,9 @@
             background-color: #fff;
             border: 1px solid #937DC2;
         }
+        @media screen and (max-width: 1250px) {
+            left: 78vw;
+        }
     }
     .btn-top-hidden{
         display: none;

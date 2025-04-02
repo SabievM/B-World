@@ -39,7 +39,7 @@ const NewArrivals: React.FC<NewArrivalsProps> = ({ newArrivalsRef }) => {
     <div ref={newArrivalsRef} className="new-arrivals">
       <div className="container">
         <div className="title">
-          <h2>New Arrivals</h2>
+          <h2>Новое поступление</h2>
         </div>
         <div style={{ transform: `translateX(${slidePosition}px)` }} className="cards">
           {newBooks.map((book) => (

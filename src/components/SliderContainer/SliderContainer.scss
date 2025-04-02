@@ -7,11 +7,18 @@
     height: 33.313rem;
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 1250px) {
+        margin-top: 0;
+    }
     .container {
         width: 74.5rem;
         display: flex;
         gap: 4.438rem;
         padding-left: 2.5rem;
+        @media screen and (max-width: 1250px) {
+            width: 360px;
+            flex-direction: column;
+        }
         .left {
             padding-top: 5.1rem;
             display: flex;
@@ -39,6 +46,9 @@
                     top: -5px;
                     left: -41px;
                     transition: 0.3s;
+                    @media screen and (max-width: 1250px) {
+                        display: none;
+                    }
                 }
                 &:hover {
                     background-color: #7a3ff8;
@@ -65,6 +75,9 @@
                     top: 14px;
                     left: -2.5rem;
                     transition: 0.3s;
+                    @media screen and (max-width: 1250px) {
+                        display: none;
+                    }
                 }
                 &:hover {
                     color: #7a3ff8;
@@ -90,6 +103,9 @@
                     top: 13px;
                     left: -2.5rem;
                     transition: 0.3s;
+                    @media screen and (max-width: 1250px) {
+                        display: none;
+                    }
                 }
                 &:hover {
                     color: #7a3ff8;
@@ -123,6 +139,9 @@
                     top: -16px;
                     left: -2.5rem;
                     transition: 0.3s;
+                    @media screen and (max-width: 1250px) {
+                        display: none;
+                    }
                 }
                 &:hover {
                     background-color: #7a3ff8;
@@ -145,6 +164,9 @@
                 font-weight: 100;
                 color: #201f1f;
                 text-transform: uppercase;
+                @media screen and (max-width: 1250px) {
+                    display: none;
+                }
             }
             .image {
                 position: relative;

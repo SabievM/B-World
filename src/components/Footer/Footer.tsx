@@ -1,4 +1,4 @@
-import Logo from '../../assets/icons/LogoBWorld.svg'
+import Logo from "../../assets/images/logo_JB.jpg";
 import InstagramIcon from '../../assets/icons/icon-instagram.svg'
 import FacebookIcon from '../../assets/icons/icon-facebook.svg'
 import TwitterIcon from '../../assets/icons/icon-twitter.svg'
@@ -9,6 +9,7 @@ import PaipalImage from '../../assets/images/paipal.png'
 import MasterCardImage from '../../assets/images/masterCard.png'
 import VisaImage from '../../assets/images/visa.png'
 import './Footer.scss'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -17,9 +18,11 @@ const Footer = () => {
         <div className="top">
           <div className="left">
             <div className="column column-logo">
-              <div className="logo">
-                <img src={Logo} alt="Logo" />
-              </div>
+                <Link to="/">
+                  <div className="logo">
+                    <img src={Logo} alt="Logo" />
+                  </div>
+                </Link>
             </div>
             <div className="column">
               <h3 className="title">Categories</h3>

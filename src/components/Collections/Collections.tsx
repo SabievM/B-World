@@ -39,7 +39,7 @@ const Collections: React.FC<CollectionsProps> = ({ collectionsRef }) => {
   return (
     <div ref={collectionsRef} className="collections">
       <div className="container">
-        <h2 className="title">Collections</h2>
+        <h2 className="title">Коллекции</h2>
         <div style={{ transform: `translateX(${slidePosition}px)` }} className="cards">
           {collections.map((item) => (
             <Card key={item.id} book={item} />

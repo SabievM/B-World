@@ -45,7 +45,7 @@ const Bestsellers: React.FC<BestsellersProps> = ({ bestsellersRef }) => {
     <div ref={bestsellersRef} className="bestsellers">
       <div className="container">
         <div className="title">
-          <h2>Bestsellers</h2>
+          <h2>Бестселлеры</h2>
         </div>
         <div style={{ transform: `translate(${slidePosition}px)` }} className="cards">
           {data.map((item) => (

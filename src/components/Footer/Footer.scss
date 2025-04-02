@@ -8,6 +8,11 @@
     margin-top: 109px;
     padding-top: 48px;
     color: #fff;
+    @media screen and (max-width: 1250px) {
+        margin-top: 0;
+        padding-top: 0;
+        height: 200px;
+    }
     &::before{
         position: absolute;
         content: '';
@@ -21,10 +26,17 @@
         height: 100%;
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 1250px) {
+            align-items: center;
+           
+        }
         .top{
             display: flex;
             align-items: center;
             justify-content: space-between;
+            @media screen and (max-width: 1250px) {
+                display: none;
+            }
             .left{
                 display: flex;
                 align-items: start;
@@ -42,7 +54,17 @@
                 }
                 .column-logo{
                     margin-right: 144px;
-                    .logo{}
+                    .logo{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            width: 53px;
+                            height: 50px;
+                            object-fit: cover;
+                            border-radius: 50%;
+                        }
+                    }
                 }
                 .column-contacts{
                     .title{
@@ -86,6 +108,12 @@
             justify-content: space-between;
             margin-top: 29px;
             margin-bottom: 80px;
+            @media screen and (max-width: 1250px) {
+                flex-direction: column;
+                align-items: start;
+                gap: 2rem;
+                width: 360px;
+            }
             .links-to-social{
                 display: flex;
                 align-items: center;
@@ -101,6 +129,9 @@
             position: absolute;
             bottom: 15px;
             left: 40%;
+            @media screen and (max-width: 1250px) {
+                left: 33%;
+            }
             .text{}
         }
     }
