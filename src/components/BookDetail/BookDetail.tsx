@@ -48,7 +48,7 @@ const BookDetail: React.FC = () => {
 
   return (
     <div className="book-detail">
-      <div className="container">
+      <div className="product-container">
         <div className="left">
           <div className="images">
             {Array(4)
@@ -70,7 +70,7 @@ const BookDetail: React.FC = () => {
         <div className="right">
           <h2 className="title">{book?.title}</h2>
           <span className="author">{book?.author}</span>
-          <div className="rating">
+          <div className="raiting">
             <div className="rating-stars">
               <img src={IconStar} alt="IconStar" />
             </div>

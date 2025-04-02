@@ -3,26 +3,48 @@
     align-items: center;
     justify-content: center;
     margin-top: 32px;
-    .container{
+    @media screen and (max-width: 1250px) {
+        width: 360px;
+        margin-bottom: 40px;
+        margin-left: 36px;    
+    }
+    .product-container{
         width: 1192px;
-        height: 653px;
         display: flex;
         align-items: start;
         justify-content: space-between;
         gap: 60px;
+        @media screen and (max-width: 1250px) {
+            width: 360px;
+            flex-direction: column;
+        }
         .left{
             width: 580px;
-            height: 100%;
+            height: 728px;
             display: flex;
             align-items: start;
             justify-content: space-between;
             gap: 20px;
+            @media screen and (max-width: 1250px) {
+                width: 360px;
+                flex-direction: column-reverse;
+                gap: 8px;
+                height: 500px;
+            }
             .images{
                 display: flex;
                 flex-direction: column;
                 height: 100%;
                 align-items: center;
                 justify-content: space-between;
+                @media screen and (max-width: 1250px) {
+                    width: 360px;
+                    height: 190px;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+                }
                 .cloudiness{
                     background-color: #0000003b;
                     transition: 0.3s;
@@ -48,10 +70,13 @@
             .main-image{
                 width: 412px;
                 height: 653px;
+                @media screen and (max-width: 1250px) {
+                    width: 360px;
+                }
                 img{
                     width: 100%;
                     height: 100%;
-                    object-fit: cover; 
+                    object-fit: contain; 
                 }
             }
         
@@ -61,6 +86,11 @@
             flex-direction: column;
             height: 656px;
             width: 552px;
+            @media screen and (max-width:1250px) {
+                width: 360px;
+                min-height: 1230px;
+                margin-bottom: 10px;
+            }
             .title{
                 font-size: 1.75rem;
                 font-weight: bold;
@@ -78,18 +108,25 @@
                 align-items: center;
                 gap: 1rem;
                 margin-bottom: 2.5rem;
-                .raiting-stars{}
-                .raiting-number{}
+                @media screen and (max-width:1250px) {
+                    margin-bottom: 0.5rem;
+                }
             }
             .price{
                 display: block;
                 font-size: 1.5rem;
                 margin-bottom: 40px;
+                @media screen and (max-width:1250px) {
+                    margin-bottom: 1.5rem;
+                }
             }
             .description{
                 color: #4F4C57;
                 font-size: 1rem;
                 margin-bottom: 34px;
+                @media screen and (max-width:1250px) {
+                    margin-bottom: 1rem;
+                }
             }
             .counter{
                 display: flex;
@@ -97,6 +134,9 @@
                 gap: 10px;
                 color: #4F4C57;
                 margin-bottom: 41px;
+                @media screen and (max-width:1250px) {
+                    margin-bottom: 1.5rem;
+                }
                 .counter-button{
                     background-color: transparent;
                     color: #000;
@@ -113,7 +153,9 @@
                 gap: 16px;
                 justify-content: space-between;
                 margin-bottom: 72px;
-                
+                @media screen and (max-width:1250px) {
+                    flex-direction: column;
+                }
                 &::before{
                     position: absolute;
                     content: '';
@@ -130,6 +172,9 @@
                     border: none;
                     border-radius: 2px;
                     transition: 0.3s;
+                    @media screen and (max-width:1250px) {
+                        width: 100%;
+                    }
                     &:hover{
                         transform: scale(1.1);
                     }
@@ -144,23 +189,35 @@
                     border: 1px solid #937DC2;
                 }
             }
-            .additional-information{
+            .additional-informations{
                 width: 100%;
                 min-height: 113px;
                 display: flex;
                 justify-content: space-between;
                 gap: 16px;
                 flex: 1;
-                .column{
+                @media screen and (max-width:1250px) {
+                    flex-direction: column;
+                    width: 360px;
+                    justify-content: space-between;
+                }
+                .column-google-book{
                     width: 50%;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
+                    @media screen and (max-width:1250px) {
+                        gap: 18px;
+                        width: 100%;
+                    }
                     .item{
                         position: relative;
                         display: flex;
                         align-items: center;
-                       
+                        @media screen and (max-width:1250px) {
+                            width: 360px;
+                            justify-content: space-between;
+                        }
                         .name{
                             color: #937DC2;
                         }
@@ -168,6 +225,9 @@
                             position: absolute;
                             left: 135px;
                             color: #4F4C57;
+                            @media screen and (max-width: 1250px) {
+                                left: 220px;
+                            }
                         }
                     }
                 }

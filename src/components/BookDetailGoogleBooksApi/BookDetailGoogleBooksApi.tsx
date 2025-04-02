@@ -45,7 +45,7 @@ console.log(id);
 
   return (
     <div className="book-detail">
-      <div className="container">
+      <div className="product-container">
         <div className="left">
           <div className="main-image">
             <img src={book?.volumeInfo.imageLinks?.thumbnail} alt="MainImage" />
@@ -86,8 +86,8 @@ console.log(id);
                 : 'Добавить в избранное'}
             </button>
           </div>
-          <div className="additional-information">
-            <div className="column column-left">
+          <div className="additional-informations">
+            <div className="column-google-book column-left">
               <div className="item">
                 <span className="name">Автор :</span>
                 <span className="meaning">{book?.volumeInfo?.authors}</span>
@@ -101,7 +101,7 @@ console.log(id);
                 <span className="meaning">{book?.volumeInfo?.printedPageCount}</span>
               </div>
             </div>
-            <div className="column column-right">
+            <div className="column-google-book column-right">
               <div className="item">
                 <span className="name">Publication date :</span>
                 <span className="meaning">{book?.volumeInfo?.publishedDate}</span>
