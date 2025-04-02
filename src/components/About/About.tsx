@@ -1,6 +1,6 @@
 import './About.scss'
 import MapImage from '../../assets/images/mapJBScreen.jpg'
-import MapComponent from '../../components/GoogleMap/GoogleMap'
+//import MapComponent from '../../components/GoogleMap/GoogleMap'
 
 const About = () => {
   return (
